@@ -49,3 +49,5 @@ io.on('connection', (client) => {
 
 
 });
+
+module.exports = io;

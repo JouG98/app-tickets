@@ -32,6 +32,7 @@ socket.on('estadoActual', function(resp) {
 });
 
 
+
 $('button').on('click', function() {
 
     socket.emit('siguienteTicket', null, function(siguienteTicket) {
@@ -41,3 +42,5 @@ $('button').on('click', function() {
     });
 
 });
+
+// module.exports = app;
