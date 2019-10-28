@@ -15,23 +15,30 @@ class TicketControl {
 
     constructor() {
 
-        this.ultimo = 0;
-        this.hoy = new Date().getDate();
-        this.tickets = [];
-        this.ultimos4 = [];
+            this.ultimo = 0;
+            this.hoy = new Date().getDate();
+            this.tickets = [];
+            this.ultimos4 = [];
 
-        let data = require('../data/data.json');
+            let data = require('../data/data.json');
 
-        if (data.hoy === this.hoy) {
+            if (data.hoy === this.hoy) {
 
-            this.ultimo = data.ultimo;
-            this.tickets = data.tickets;
-            this.ultimos4 = data.ultimos4;
+                this.ultimo = data.ultimo;
+                this.tickets = data.tickets;
+                this.ultimos4 = data.ultimos4;
 
-        } else {
-            this.reiniciarConteo();
+            } else {
+                this.reiniciarConteo();
+            }
+
         }
+        /// Creado
+    siguienteT() {
+        this.ultimo += 1;
 
+        let ticket = new Ticket(this.ultimo, null);
+        this.tickets.push(ticket);
     }
 
     siguiente() {

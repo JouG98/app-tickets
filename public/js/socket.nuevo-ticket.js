@@ -1,7 +1,18 @@
+//const socketIO = require('socket.io');
 // Comando para establecer la conexión
+// var socket = require('')
+// const express = require('express');
+// const app = express();
+
+
+
 var socket = io();
 
+
+//var socket = socketIO;
+
 var label = $('#lblNuevoTicket');
+
 
 
 socket.on('connect', function() {
