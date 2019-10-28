@@ -7,11 +7,11 @@
 
  let ticket = ticketControl.getUltimoTicket();
 
- app.get('/nuevo-ticket', function(req, res) {
+ //  app.get('/nuevo-ticket', function(req, res) {
 
-     res.json(ticket);
+ //      res.json(ticket);
 
- });
+ //  });
  app.get('https://joumaster16-sistema-tickets.herokuapp.com/nuevo-ticket', function(req, res) {
 
      res.json(ticket);
@@ -22,15 +22,15 @@
  //  let ultimo = ticketControl.getUltimoTicket();
  //  let suma = ultimo + uno;
 
- app.put('/nuevo-ticket', function(req, res) {
-     //  res.json(`${ultimo}+${uno} `);
-     //  res.json(ultimo + uno)
-     //  res.json(uno);
-     let siguiente = ticketControl.siguiente();
-     res.json(siguiente);
+ //  app.put('/nuevo-ticket', function(req, res) {
+ //      //  res.json(`${ultimo}+${uno} `);
+ //      //  res.json(ultimo + uno)
+ //      //  res.json(uno);
+ //      let siguiente = ticketControl.siguiente();
+ //      res.json(siguiente);
 
 
- });
+ //  });
  app.put('https://joumaster16-sistema-tickets.herokuapp.com/nuevo-ticket', function(req, res) {
      //  res.json(`${ultimo}+${uno} `);
      //  res.json(ultimo + uno)
