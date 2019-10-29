@@ -5,10 +5,10 @@ const { TicketControl } = require('../classes/ticket-control');
 
 const ticketControl = new TicketControl();
 
-let ticket = ticketControl.getUltimos4();
 
 app.get('/publico', function(req, res) {
 
+    let ticket = ticketControl.getUltimos4();
     res.json(ticket);
 
 });
