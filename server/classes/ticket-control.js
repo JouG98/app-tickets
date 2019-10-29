@@ -55,6 +55,15 @@ class TicketControl {
 
     }
 
+    getUltimoTicketGrabar() {
+        this.grabarArchivo();
+        return `Ticket ${ this.ultimo }`;
+    }
+    getUltimos4Grabar() {
+        this.grabarArchivo();
+        return this.ultimos4;
+    }
+
     getUltimoTicket() {
         return `Ticket ${ this.ultimo }`;
     }

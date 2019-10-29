@@ -19,7 +19,7 @@
 
  app.get('/nuevo-ticket', function(req, res) {
 
-     let ticket = ticketControl.getUltimoTicket();
+     let ticket = ticketControl.getUltimoTicketGrabar();
      res.json(ticket);
  });
 

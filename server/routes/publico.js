@@ -8,7 +8,7 @@ const ticketControl = new TicketControl();
 
 app.get('/publico', function(req, res) {
 
-    let ticket = ticketControl.getUltimos4();
+    let ticket = ticketControl.getUltimos4Grabar();
     res.json(ticket);
 
 });
