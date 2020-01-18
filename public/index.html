@@ -5,13 +5,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Programa de Colas</title>
-
+    <title>Sistema de Tickets</title>
+    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body class="container">
-    <h1>Programa de Colas</h1>
+<script src="js/usuario.js"></script>
+
+<body class="">
+    <!-- Image and text -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">
+            <img src="img/ticket.png" width="30" height="30" class="d-inline-block align-top" alt=""> Sistema de Tickets
+        </a>
+    </nav>
+
+    <div class="card container animated fadeIn fast mb-2" style="border: none;">
+        <div class="card-body text-center">
+            <h2>Bienvenidos</h2>
+            <h6>Elija una opción</h6>
+            <!-- <p class="lead">Elija una opción</p> -->
+        </div>
+    </div>
+
+    <div class="ventana" id="vent">
+        <div class=" card  border-secondary container " style="max-width: 540px;">
+            <div class="row no-gutters" style="margin-top: 5px;">
+
+                <div class="col-md-4" style="margin-top: 10px;">
+                    <img src="img/usuario2.png" class="card-img" alt="...">
+                </div>
+
+                <div class="col-md-8 text-center" style="margin-top: 0px; margin-bottom: 0px;">
+                    <div class="card-body">
+                        <p>Acceda a su escritorio</p>
+                        <!-- <input name="user" type="text" class="form-control" placeholder="Usuario" autofocus required>
+                        <br>
+                        <input name="pass" type="text" class="form-control" placeholder="Contraseña" autofocus required> -->
+
+                    </div>
+                    <form action="escritorio.html">
+                        <input name="escritorio" id="es" type="number" class="form-control" placeholder="Escritorio" autofocus required>
+                        <!-- <input name="user" type="text" class="form-control" placeholder="Usuario" autofocus required> -->
+                        <br>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <button type="submit" class="btn btn-outline-secondary btn-block mb-2" onclick="usuario()">
+                                    Ingresar
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <button onclick="cerrar()" class="btn btn-outline-secondary btn-block "> Cancelar </button>
+                            </div>
+                        </div>
+
+
+
+
+                    </form>
+                    <div>
+
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="col-6">
+                            <button onclick="" class="btn btn-outline-secondary btn-block  "> Acceder </button>
+
+                        </div>
+                        <div class="col-6">
+                            
+
+                        </div>
+                    </div> -->
+                    <!-- <button class="btn btn-outline-secondary btn-block">
+                        Atender siguiente ticket
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-6 container">
+
+            <!-- <a class="btn btn-primary" href="publico.html">Pantalla publica</a>
+            <a class="btn btn-secondary" href="nuevo-ticket.html">Crear Tickets</a> -->
+
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 120px; ">
+        <div class="row">
+            <div class="col-sm-6 container">
+                <div class="card" style="border: none;">
+                    <div class="card-body">
+                        <h2 class="card-title text-center"> Clientes </h2>
+                        <img src="../img/bol.png" class="card-img-top" style="height: 250px;" alt="...">
+                        <p class="card-text" style="margin-top: 20px;">Aquí se encuentra el acceso para genera un ticket y visializar los boletos atendidos</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="publico.html" class="btn btn-outline-secondary btn-block  ">Pantalla pública</a>
+
+                            </div>
+                            <div class="col-6">
+                                <!-- <a href="nuevo-ticket.html" class="btn btn-outline-secondary btn-block ">Crear Tickets</a> -->
+                                <a href="nuevo-ticket.html" class="btn btn-outline-secondary btn-block ">Crear Tickets</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 container">
+                <div class="card" style="border: none;">
+                    <div class="card-body text-center">
+                        <h2 class="card-title "> Usuarios </h2>
+                        <img src="../img/bloquear.png" class="card-img-top mb-2" style="height: 250px;  width: 250px" alt="...">
+                        <input name="user" id="user" type="text" class="form-control mb-3" placeholder="Usuario" autofocus required>
+
+                        <input name="pass" id="pass" type="password" class="form-control mb-3" placeholder="Contraseña" autofocus required>
+
+                        <button onclick="abrir()" class="btn btn-outline-secondary btn-block ">Ingresar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="col-sm-6 container">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-center"> Usuarios </h2>
+                        <img src="../img/user.jpg" class="card-img-top" style="height: 250px;" alt="...">
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <form action="escritorio.html">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input name="escritorio" type="number" class="form-control" placeholder="Escritorio" autofocus required>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-outline-secondary btn-block" onclick="">
+                                Ingresar
+
+                            </button>
+
+                                    <button onclick="abrir()" class="btn btn-outline-secondary btn-block ">Ingre</button> 
+                        </form>
+                        </div>
+
+                        </div>
+                       
+                    </div> -->
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- <h1>Programa de Colas</h1>
 
     <div class="row">
         <div class="col-6">
@@ -31,8 +185,16 @@
                 </button>
             </form>
         </div>
-    </div>
+    </div> -->
 
 </body>
+<footer class="footer bg-light text-center">
+    <div class="container">
+        <p class="">
+            &copy; Todos los derechos reservados
+
+        </p>
+    </div>
+</footer>
 
 </html>

@@ -10,13 +10,51 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body class="container">
-    <h1>Escritorio</h1>
-    <h4>Atendiendo a <small>....</small></h4>
+<body class="">
 
-    <button class="btn btn-primary">
-        Atender siguiente ticket
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">
+            <img src="img/ticket.png" width="30" height="30" class="d-inline-block align-top" alt=""> Sistema de Tickets
+        </a>
+    </nav>
+
+
+    <div class=" card container " style="border: none; margin-top: 130px;">
+        <div class="row no-gutters">
+            <div class="col-md-5">
+                <img src="img/t.png" class="card-img" style=" height: 390px;" alt="...">
+            </div>
+            <div class="col-md-7">
+                <div class="card-body">
+                    <h1 class="mt-5">Escritorio</h1>
+                    <h4>Atendiendo a <small>....</small></h4>
+                </div>
+                <button class="btn btn-outline-secondary btn-block" style="margin-left: 10px;">
+                    Atender siguiente ticket
+                </button>
+                <br>
+                <a href="index.html" class="btn btn-outline-secondary btn-block" style="margin-left: 10px;">
+                    Regresar
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    <div class="card container animated fadeIn fast mb-2">
+        <div class="card-body text-center">
+            <h1>Escritorio</h1>
+            <h4>Atendiendo a <small>....</small></h4>
+            <h6>Elija una opción</h6> -->
+    <!-- <p class="lead">Elija una opción</p> -->
+    <!-- </div>
+        <button class="btn btn-primary">
+            Atender siguiente ticket
+        </button>
+    </div> -->
+    <!-- <h1>Escritorio</h1>
+    <h4>Atendiendo a <small>....</small></h4> -->
+
 
 
 
@@ -26,5 +64,13 @@
     <script src="js/socket.escritorio.js"></script>
 
 </body>
+<footer class="footer bg-light text-center" style="margin-top: 260px;">
+    <div class="container ">
+        <p class=" ">
+            &copy; Todos los derechos reservados
+
+        </p>
+    </div>
+</footer>
 
 </html>

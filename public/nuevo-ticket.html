@@ -8,13 +8,42 @@
     <title>Nuevo Ticket</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <script src="../server/routes/nuevo-ticket.js"></script>
 </head>
 
 <body>
 
-    <table>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3 " style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">
+            <img src="img/ticket.png" width="30" height="30" class="d-inline-block align-top" alt=""> Sistema de Tickets
+        </a>
+    </nav>
+
+    <div class="card container animated fadeIn fast " style="margin-top: 60px; border: none; margin-bottom: 40px;">
+        <div class="card-body text-center">
+            <h1>Bienvenidos</h1>
+            <h5>Genere su tickets</h5>
+            <!-- <p class="lead">Elija una opción</p> -->
+        </div>
+    </div>
+
+    <div class="card container  mb-3 mt-5" style="max-width: 34rem; border: none; ">
+        <!-- <div class="card-header text-center">
+            <h3>Su ticket es:</h3>
+        </div> -->
+        <div class="card-body text-secondary text-center">
+            <span class="display-1" id="lblNuevoTicket">
+                Cargando...
+            </span>
+        </div>
+    </div>
+
+    <button class=" btn-outline-dark btn-lg" style="margin-left: 740px; margin-top: 120px;">
+        Generar nuevo ticket
+    </button>
+
+    <!-- <table>
         <tr>
             <td>
                 <span id="lblNuevoTicket">
@@ -24,12 +53,12 @@
         </tr>
         <tr>
             <td>
-                <button class="btn btn-secondary btn-lg">
+                <button class="btn btn-outline-dark btn-lg">
                     Generar nuevo ticket
                 </button>
             </td>
         </tr>
-    </table>
+    </table> -->
 
 
     <script src="js/libs/jquery.min.js"></script>
@@ -41,5 +70,13 @@
 
 
 </body>
+<footer class="footer bg-light text-center" style="margin-top: 200px;">
+    <div class="container ">
+        <p class=" ">
+            &copy; Todos los derechos reservados
+
+        </p>
+    </div>
+</footer>
 
 </html>
